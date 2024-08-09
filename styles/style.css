@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+:root {
+    --color-primario: #bd158a;
+    --color-secundario: #f6f6f6;
+
+    ---fuente: "Krona One", sans-serif;
+
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+
+.header {
+padding: 2% 0% 0% 25%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link {
+    font-family: var(---fuente);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.titlulo-desta {
+    color: #22D4FD;  
+
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    padding: 5% 25%;
+    justify-content: space-between;
+    gap: 82px;
+}
+.principal_contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.principal_contenido_titulo {
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+}
+
+.principal_contenido_texto {
+    font-size: 1.5rem;
+}
+
+.presentacion_enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_links {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+    border: 2px dotted #22D4FD;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.presentacion_links:hover {
+    background-color: #b11e14;
+}
+
+.presentacion_enlaces_subtitulo {
+
+ font-family: "Krona One", sans-serif;
+ font-size: 1.5rem;
+ font-weight: 400;
+}
+
+.imagen_inicial {
+    width: 50%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1d82e0d3;
+    padding: 1.5rem;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 20%;
+    }
+
+    .header_menu {
+        justify-content: center;
+    }
+    .principal {
+    flex-direction: column-reverse;
+    padding: 5%;
+
+}
+    .principal_contenido {
+        width: auto;
+    }
+}
